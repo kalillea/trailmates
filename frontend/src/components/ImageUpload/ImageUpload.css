@@ -1,0 +1,23 @@
+.image-preview-container {
+  width: 100%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.image-preview {
+  margin: 0 !important;
+  background-size: cover;
+  background-position: center;
+  width: 40vw;
+  height: 45vh;
+  background-repeat: repeat-x;
+  border-radius: 30px;
+}
+
+.preview-controllers {
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}

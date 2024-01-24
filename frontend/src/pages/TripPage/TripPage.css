@@ -1,0 +1,310 @@
+.cover-TripPage {
+  margin-top: var(--header-offset);
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: var(--global-padding);
+  box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.3);
+}
+
+.cover-TripPage-info {
+  width: 55%;
+  height: auto;
+  justify-content: space-between;
+}
+
+.cover-TripPage-info h1 {
+  font-weight: 600;
+  font-size: 4vw;
+  margin: 1% 0;
+}
+
+.cover-TripPage-info h2 {
+  font-weight: 500;
+  font-size: 1.8vw;
+  margin-bottom: 0;
+}
+
+.cover-TripPage-info p {
+  font-weight: 300;
+  font-size: 1.5vw;
+}
+
+.cover-TripPage-buttons {
+  width: 45%;
+  height: auto;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.cover-info-container {
+  width: 100%;
+  margin-bottom: 6.5%;
+  display: flex;
+  flex-direction: row;
+}
+
+.container-general-info {
+  padding: var(--global-padding);
+  height: 60vh;
+  margin: 8% 0;
+  align-items: center;
+}
+
+.trippage-general-info-row {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.trippage-general-info-left {
+  width: 50%;
+}
+
+.trippage-general-info-right {
+  width: 50%;
+}
+
+.trippage-main-container {
+  min-height: 70vh;
+  background-color: var(--secondary);
+  padding: 0 0 5% 2%;
+}
+
+.trippage-main-l {
+  width: 58%;
+  align-items: center;
+  color: var(--white-tone);
+  font-weight: 500;
+  font-size: 1.2vw;
+}
+
+.trippage-main-r {
+  width: 42%;
+  align-items: start;
+  color: var(--white-tone);
+  font-weight: 600;
+}
+
+.trippage-main-l h2,
+.trippage-main-r h2 {
+  font-size: 2.3vw;
+  font-weight: 500;
+}
+
+.trippage-main-l img,
+.trippage-main-r img {
+  border-radius: 5px;
+  width: 80%;
+  height: auto;
+  margin-top: -5%;
+  margin-bottom: 4%;
+}
+
+.trippage-main-l img {
+  margin-top: -8%;
+}
+
+.trippage-main-l img:hover,
+.trippage-main-r img:hover {
+  cursor: pointer;
+}
+
+.trippage-review-container {
+  min-height: 40vh;
+  align-items: center;
+  margin: 3% 0;
+  padding: var(--global-padding);
+}
+
+.trippage-review-container h1 {
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 3vw;
+}
+
+.review-sep {
+  width: 25vw;
+  height: 0.8vh;
+  background-color: var(--accent);
+  margin: 2%;
+  border-radius: 100px;
+  margin-bottom: 5%;
+}
+
+.text-wrapper {
+  width: 75%;
+  margin: auto;
+  padding-left: 0%;
+}
+
+.trippage-extra-itemwrapper {
+  width: 80%;
+  margin: 2% 0;
+}
+
+.trippage-extra-itemwrapper h3 {
+  font-size: 1.1vw;
+  font-weight: 400;
+  margin: 0;
+}
+
+.trippage-extra-itemwrapper p {
+  font-size: 1.5vw;
+  font-weight: 500;
+  margin: 3% 0;
+}
+
+.trippage-scrolldown-indicator {
+  animation: bounce 2s ease infinite;
+  bottom: 0;
+  display: inline-block;
+  margin: 0 0 1% 0;
+  left: 47.8vw;
+  text-align: center;
+  width: 3vw;
+  font-size: 2rem;
+  font-weight: 700;
+  height: 3rem;
+  position: absolute;
+  top: 93vh;
+}
+
+.trippage-scrolldown-indicator p {
+  color: var(--secondary);
+}
+
+.trippage-scrolldown-indicator p:hover {
+  cursor: pointer;
+}
+
+.trippage-write-review {
+  align-items: center;
+  margin-bottom: 8%;
+}
+
+.trippage-write-review h2 {
+  margin-top: 0;
+  font-size: 1.5vw;
+  margin-bottom: 2%;
+}
+
+.cover-info-container > .flex-column.cover-TripPage-info {
+  text-shadow: 3px 0 8px rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (max-width: 768px) {
+  .cover-info-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .cover-TripPage-info {
+    font-size: 3rem;
+    width: 100%;
+    margin-bottom: 15%;
+  }
+  .cover-TripPage-info h1 {
+    font-size: 2.5rem;
+  }
+  .cover-TripPage-info h2 {
+    font-size: 1.2rem;
+  }
+  .cover-TripPage-info p {
+    font-size: 1rem;
+  }
+  .cover-TripPage-buttons {
+    width: 100%;
+    height: 30%;
+    margin-bottom: 5%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cover-TripPage-buttons .button.accent-fill {
+    font-size: 1rem !important;
+    height: 1.5vh !important;
+    font-weight: 400;
+  }
+
+  .container-general-info {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .trippage-general-info-left {
+    width: 90%;
+  }
+  .trippage-general-info-right {
+    width: 90%;
+  }
+
+  .trippage-profile-container p {
+    font-size: 1rem !important;
+  }
+  .trippage-profile-container .button.accent-outline {
+    font-size: 0.8rem;
+    height: 1vh !important;
+  }
+
+  .trippage-general-info-left {
+    flex-direction: row;
+    align-items: center;
+    margin: 20% 0;
+  }
+  .trippage-general-info-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trippage-general-info-right {
+    margin-bottom: 20%;
+  }
+
+  .trippage-main-container {
+    flex-direction: column;
+  }
+  .trippage-main-l,
+  .trippage-main-r {
+    width: 100%;
+    align-items: center;
+    margin: 20% 0 8% 0;
+  }
+
+  .trippage-main-l h2,
+  .trippage-main-r h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .text-wrapper {
+    margin: 0;
+    padding: 0;
+    width: 80%;
+  }
+  .text-wrapper p {
+    font-size: 1rem;
+  }
+
+  .trippage-extra-itemwrapper {
+    margin: 5% 0;
+  }
+
+  .trippage-extra-itemwrapper h3 {
+    font-size: 0.8rem;
+  }
+
+  .trippage-extra-itemwrapper p {
+    font-size: 1.2rem;
+  }
+
+  .trippage-review-container h1 {
+    margin-top: 5%;
+    font-size: 1.8rem;
+  }
+  .review-sep {
+    height: 0.5vh;
+    width: 50%;
+  }
+}

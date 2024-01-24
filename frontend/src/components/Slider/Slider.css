@@ -1,0 +1,50 @@
+.slider-container {
+  width: 95%;
+  height: 60vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 85%;
+}
+
+.icon-button {
+  all: unset;
+
+  width: 50px;
+  height: 50px;
+  background-color: var(--secondary);
+  border-radius: 10000px;
+  margin: 0 3%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-icon {
+  fill: white;
+  position: relative;
+  right: 3px;
+  width: 35px;
+  height: 35px;
+}
+
+.icon-button:hover .nav-icon {
+  fill: var(--primary);
+}
+
+.icon-button:active .nav-icon {
+  opacity: 0.5;
+}
+
+.nav-icon.left {
+  transform: rotate(180deg);
+  right: 8px;
+}

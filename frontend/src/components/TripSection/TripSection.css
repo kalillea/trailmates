@@ -1,0 +1,40 @@
+.dark-mode {
+  color: var(--dark-mode-font) !important;
+}
+
+.trip-section {
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+.section-header-text {
+  all: unset;
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin: 20px;
+  display: block;
+}
+
+.trip-section-divider {
+  width: 40%;
+  height: 10px;
+  display: block;
+  margin: 20px;
+  position: relative;
+  left: 7%;
+}
+
+.trip-section-divider rect {
+  fill: var(--secondary);
+  width: 100%;
+  height: 100%;
+}
+
+#slider-container {
+  display: flex;
+  justify-content: center;
+}
+
+.trip-section svg {
+  margin-left: 10%;
+}

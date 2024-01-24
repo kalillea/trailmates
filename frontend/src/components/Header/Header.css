@@ -1,0 +1,91 @@
+.cover {
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.cover h1 {
+  font-size: 4vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  margin: 11% 0 0 8%;
+  animation: slideIn-left 1s ease-out;
+}
+
+.search-bar-container {
+  margin-left: 8%;
+  margin-top: 2%;
+  animation: slideIn-left 1s ease-out;
+}
+
+.search-button-cover {
+  background-color: rgb(0, 0, 0, 0);
+  cursor: pointer;
+  font-size: 1rem;
+  border: 0;
+  height: 30px;
+  color: #f9f9f9;
+}
+
+.search-button-cover:hover {
+  opacity: 0.7;
+}
+
+.scrolldown-indicator {
+  animation: bounce 2s ease infinite;
+  bottom: 0;
+  display: inline-block;
+  margin: 0 0 1% 0;
+  left: 47.8vw;
+  text-align: center;
+  width: 3vw;
+  font-size: 2rem;
+  font-weight: 700;
+  height: 3rem;
+  position: relative;
+  top: 18vh;
+}
+
+.scrolldown-indicator a {
+  color: var(--secondary);
+}
+
+.scrolldown-indicator a:hover {
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-50%);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .search-bar-container {
+    margin: auto;
+    margin-top: 0;
+  }
+
+  .scrolldown-indicator {
+    top: -5vh;
+    width: 3vw;
+    left: 42vw;
+  }
+
+  .cover h1 {
+    font-size: 10vw;
+    margin: auto;
+    text-align: center;
+    margin-top: 30vh;
+  }
+
+  .search-bar-container {
+    margin: auto;
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,151 @@
+.popup-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.698);
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  width: 60vw;
+  height: 70vh;
+  background-color: white;
+  border-radius: 35px;
+  display: flex;
+  overflow: hidden;
+  animation: slideIn-Y 0.55s cubic-bezier(0.1, 0.8, 0.28, 0.95);
+}
+
+.dark-mode .login-container {
+  background-color: var(--dark-primary) !important;
+}
+
+.left-container,
+.right-container {
+  display: flex;
+  justify-items: space-around;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 5%;
+}
+
+.left-container {
+  width: 65%;
+  color: var(--white-font);
+  background-image: url("../assets/hwavebg.svg");
+  background-repeat: no-repeat;
+  padding-right: 10%;
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+
+.left-container svg {
+}
+
+.right-container {
+  width: 35%;
+  color: var(--accent);
+  position: relative;
+}
+
+.left-container > h1 {
+  all: unset;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.left-container > p {
+  all: unset;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 5%;
+}
+
+.right-container > h1#login-header-text {
+  all: unset;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.right-container .login-button,
+.right-container .register-button {
+  width: 60%;
+  height: 40px;
+  margin-top: 5%;
+}
+
+.right-container > p {
+  all: unset;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 5%;
+  text-align: left;
+}
+
+p u:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.right-container > .button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 5%;
+  padding: 3%;
+}
+
+.right-container > .close-button {
+  position: absolute;
+  top: 3%;
+  right: 4%;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  stroke-width: 1px;
+  stroke: var(--secondary);
+  fill: var(--secondary);
+}
+
+.right-container > .close-button:hover {
+  fill: var(--accent);
+  stroke: var(--accent);
+}
+
+.right-container .error {
+  color: red;
+}
+
+.login-header-text {
+}
+
+@media only screen and (max-width: 856px) {
+  .left-container > h1,
+  .right-container > h1 {
+    font-size: 1.5rem;
+  }
+
+  .right-container > p,
+  .left-container > p {
+    font-size: 0.7rem;
+  }
+
+  .login-container {
+    width: 90vw;
+    height: 90vh;
+    border-radius: 20px;
+  }
+
+  .right-container > .button-container {
+    margin-left: 7%;
+  }
+}

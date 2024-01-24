@@ -1,0 +1,13 @@
+.title-seperator {
+  border-radius: 1000px;
+}
+
+.title-seperator.secondary {
+  background-color: var(--secondary);
+  margin: 6% auto;
+}
+
+.title-seperator.accent {
+  background-color: var(--accent);
+  margin: 6% auto;
+}

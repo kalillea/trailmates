@@ -1,0 +1,145 @@
+.image-carousel-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 100;
+}
+
+.comment-form {
+  width: 60vw;
+  height: auto;
+  background-color: var(--white-tone);
+  border-radius: 30px;
+  padding: 4% 5% 2%;
+  margin: auto;
+}
+
+.comment-form-user-info-rating-value {
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+}
+
+.comment-form-user-info-rating-value input {
+  width: 1ch;
+  font-size: 1.6vw;
+  font-family: "Montserrat";
+  padding: 0;
+  margin-right: 2%;
+}
+
+.comment-form-user-info-container {
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.comment-form-user-info-profile {
+  align-items: center;
+  font-weight: 300;
+}
+
+.comment-form-user-info-profile h3 {
+  align-items: center;
+  font-weight: 400;
+  font-size: 1.4vw;
+  margin-top: 3%;
+}
+
+.comment-form-user-info-profile p {
+  margin: 1% 0;
+  color: var(--accent);
+}
+
+.comment-form-profile-pic {
+  height: 10vh !important;
+  width: 10vh;
+  border-radius: 100px;
+}
+
+.comment-form-user-info-rating {
+  align-items: center;
+}
+
+.comment-form-user-info-rating h2 {
+  margin-bottom: 0;
+  color: var(--secondary);
+}
+
+.comment-form-user-info-rating p {
+  font-size: 1.6vw;
+}
+
+.comment-form-comment {
+  background-color: #efefef;
+  border-radius: 30px;
+  height: 15vw;
+  padding: 2% 4%;
+  margin-top: 3%;
+}
+
+.comment-form-actions {
+  width: 100%;
+  justify-content: space-between;
+  margin: 3% 0;
+  align-items: center;
+}
+
+.comment-form-actions a {
+  color: var(--secondary);
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+
+.comment-form-actions-close {
+  width: 13%;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s;
+}
+
+.comment-form-actions-close img {
+  height: 1.3vw;
+  padding-top: 1%; /*Du så ikke denne, Thor*/
+  width: auto;
+}
+
+.comment-form-actions-close:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+.comment-form-field {
+  outline: none;
+  border: 0;
+  background-color: transparent;
+}
+
+.comment-form-textarea {
+  font-size: 1.3vw;
+  font-family: "Montserrat";
+  resize: none;
+  height: 100%;
+  width: 100%;
+}
+
+.comment-form-input {
+  margin-bottom: 2%;
+  font-size: 1.8vw;
+  font-weight: 550;
+  font-family: "Montserrat";
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.dark-mode .comment-form-user-info-rating-value > p {
+  color: var(--dark-primary);
+}

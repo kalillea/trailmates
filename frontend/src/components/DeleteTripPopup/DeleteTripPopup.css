@@ -1,0 +1,23 @@
+.delete-trip-popup-confirm {
+  height: 25vh;
+  width: 35vw;
+  background-color: var(--secondary);
+  border-radius: 30px;
+  align-items: center;
+  justify-content: space-around;
+}
+.delete-trip-popup-confirm p {
+  font-size: 1vw;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-trip-button-container {
+  width: 70%;
+  justify-content: space-between;
+  margin-bottom: 3%;
+}

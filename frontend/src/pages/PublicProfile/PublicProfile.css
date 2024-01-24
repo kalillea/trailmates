@@ -1,0 +1,114 @@
+.container-public-profile {
+  width: 100%;
+}
+
+.m5 {
+  margin: 7% 0 0 0;
+}
+
+.container-public-userinfo {
+  width: 40%;
+  align-items: center;
+}
+
+.container-public-aboutme {
+  width: 50%;
+  font-size: 1.2vw;
+}
+
+.container-public-aboutme h2 {
+  font-size: 2.2vw;
+  font-weight: 600;
+  margin: 5% 0 0 0;
+}
+
+.container-public-aboutme-sub {
+  margin-left: 5%;
+}
+
+.container-public-aboutme-sub h2 {
+  font-size: 3.5vw;
+  font-weight: 600;
+  color: var(--accent);
+  margin: 2% 0 4% 0;
+}
+
+.public-profile-img {
+  background-size: cover;
+  border: var(--secondary) 0.5vw solid;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 1000px;
+  align-self: center;
+  margin: 2vh auto;
+}
+
+.container-public-userinfo h1 {
+  font-weight: 600;
+  font-size: 2.5vw;
+  margin: 2%;
+}
+
+.container-public-userinfo-sub {
+  text-align: left;
+}
+
+.container-public-userinfo-sub p {
+  font-size: 1.2vw;
+  margin: 5% 0;
+}
+
+.container-public-user-trips {
+  padding: 8% 0;
+  margin-top: -3%;
+  background-size: cover;
+}
+
+.title-container-public-usertrips {
+  align-items: center;
+  justify-content: center;
+  margin-left: 35vw;
+}
+
+.title-container-public-usertrips h2 {
+  color: var(--white-tone);
+  font-weight: 500;
+  font-size: 3vw;
+  margin: 1%;
+}
+
+.title-container-public-usertrips .title-seperator {
+  margin: 0;
+}
+
+.container-public-user-reviews {
+  align-items: center;
+  justify-content: center;
+}
+
+.container-public-user-reviews h2 {
+  font-weight: 500;
+  font-size: 3vw;
+  margin: 1%;
+}
+
+.container-public-user-reviews .title-seperator {
+  margin: 0;
+  margin-bottom: 500px; /*Må fjernes når reviews legges inn*/
+}
+
+@media only screen and (max-width: 768px) {
+  .pp_container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .pp_container > * {
+    width: 80%;
+    margin: auto;
+    align-items: center;
+  }
+  .container-public-userinfo {
+    margin: 50% 0;
+    transform: scale(3);
+  }
+}

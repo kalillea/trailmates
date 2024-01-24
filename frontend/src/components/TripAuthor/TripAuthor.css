@@ -1,0 +1,58 @@
+.trippage-profile-container {
+  color: var(--white-tone);
+  background-color: var(--secondary);
+  align-items: center;
+  margin: auto;
+  height: 32vh;
+  width: 80%;
+  border-radius: 5px;
+  justify-content: center;
+  padding: 10% 0;
+}
+
+.trippage-profile-left {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5%;
+  padding-left: 15%;
+}
+
+.trippage-profile-left h2 {
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  font-size: 1.8vw;
+}
+
+.trippage-profile-left h3 {
+  margin-top: 3%;
+}
+
+.trippage-profile-left p {
+  font-weight: 500;
+  font-size: 1vw;
+}
+
+.trippage-profile-buttons {
+  width: 8%;
+  height: auto;
+  height: 60%;
+  justify-content: space-around;
+  padding-left: 15%;
+}
+
+.trippage-profile-buttons img {
+  width: 70%;
+  transition: all 0.5s;
+}
+
+.trippage-profile-buttons img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#trippage-profile {
+  height: 20vh;
+  width: 20vh;
+  border-radius: 1000px;
+}

@@ -1,0 +1,69 @@
+.button {
+  all: unset;
+  cursor: pointer;
+  border-radius: 10000px;
+  padding: 8px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
+  opacity: 0.6;
+}
+
+.button.secondary-outline,
+.button.accent-outline {
+  border: 3px solid;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.button.secondary-outline {
+  border-color: var(--secondary);
+  color: var(--secondary);
+  font-weight: 600;
+  font-size: 1.2vw;
+}
+
+.button.accent-outline {
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 1.2vw;
+}
+
+.button.accent-fill {
+  background-color: var(--accent);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.button.secondary-fill {
+  background-color: var(--secondary);
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+.hide {
+  display: none !important;
+}
+
+.button svg {
+  margin-left: 10%;
+}
+
+.plus {
+  margin-left: 0 !important;
+}
+
+.trip-heart-icon {
+  height: 23px;
+  width: 23px;
+}

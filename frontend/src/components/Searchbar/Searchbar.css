@@ -1,0 +1,104 @@
+#search-container {
+  margin: 6% 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-container.nav:has(input[type="text"]:focus) {
+  border: 2px solid var(--secondary);
+}
+
+.header {
+  width: 35vw;
+  height: 40px;
+  border-bottom: 4px solid var(--secondary);
+  padding-bottom: 1%;
+}
+
+.header-text {
+  font-size: 2vw !important;
+}
+
+.nav {
+  height: 2.8vw;
+  width: 20%;
+  border-radius: 10000px;
+  border: 2px solid #ffffff;
+  padding: 0;
+}
+
+#search-container input[type="text"] {
+  all: unset;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 1% 5%;
+  color: white;
+  overflow: hidden;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.nav input {
+  padding: 1% 5%;
+}
+
+.header input {
+  padding: 1% 0%;
+}
+
+.search-icon path {
+  fill: rgb(255, 255, 255);
+}
+
+.search-icon {
+  position: relative;
+  height: 110%;
+  border: none;
+  transition: all 0.5s ease-out;
+}
+
+.header.search-icon {
+  height: 100%;
+  width: 32px;
+  margin: 0;
+  margin: 0 1% 0 0;
+}
+
+.nav.search-icon:hover path {
+  fill: var(--white-tone);
+}
+
+.nav.search-icon {
+  height: 32px;
+  width: 26px;
+  margin: 0 4% 0 0;
+}
+
+.search-icon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.5s ease-out;
+}
+
+.search-icon:hover path {
+  fill: var(--secondary);
+}
+
+.nav input::placeholder,
+.header input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    width: 70vw;
+    margin: auto;
+  }
+
+  .header-text {
+    font-size: 1rem !important;
+  }
+}

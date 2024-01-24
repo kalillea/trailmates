@@ -1,0 +1,151 @@
+h3,
+h4,
+h5 {
+  all: unset;
+  display: block;
+  margin: 3px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.card-container {
+  width: 300px;
+  height: auto;
+  overflow: hidden;
+  margin: 0;
+  display: inline-block;
+}
+
+.card-image {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  border-radius: 22px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.heart {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  height: 40px;
+  width: 40px;
+  fill-rule: initial;
+  fill: rgba(0, 0, 0, 0);
+  stroke: var(--secondary);
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: miter;
+}
+
+.heart:hover {
+  cursor: pointer;
+}
+
+.heart:active {
+  fill: var(--secondary);
+  fill-opacity: 1;
+}
+
+.filled {
+  fill: var(--secondary);
+  fill-opacity: 1;
+}
+
+.filled:active {
+  fill: rgba(0, 0, 0, 0);
+}
+
+.dark-mode .card-container > div {
+  color: var(--dark-mode-font) !important;
+}
+
+.card-readmore-arrow {
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.container-card-readmore {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.2s ease-in;
+}
+
+.container-card-readmore:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease-in-out;
+}
+
+.container-card-readmore:hover .card-readmore-text {
+  visibility: visible;
+  transition: all 0.2s ease-in;
+}
+
+.container-card-readmore:hover .card-readmore-underline {
+  visibility: visible;
+  transition: all 0.2s ease-in;
+}
+
+.card-readmore-text:hover .card-readmore-underline {
+  width: 12rem;
+  margin-top: 2%;
+  transition: all 0.2s ease-in;
+}
+
+.card-readmore-text .card-readmore-arrow {
+  transition: all 0.2s ease-in;
+}
+.card-readmore-text:hover .card-readmore-arrow {
+  margin-left: 2rem;
+  transition: all 0.2s ease-in;
+}
+
+.container-card-readmore .card-readmore-text {
+  transition: all 0.2s ease-in;
+  visibility: hidden;
+  color: var(--white-font);
+}
+
+.container-card-readmore .card-readmore-underline {
+  transition: all 0.2s ease-in;
+  visibility: hidden;
+  height: 0.3vh;
+  width: 11rem;
+  background-color: var(--white-tone);
+  border-radius: 1000px;
+}
+
+.card-readmore-text:hover {
+  cursor: pointer;
+}
+
+.card-container > .black {
+  color: var(--dark-font);
+}
+
+.card-container > .white {
+  color: var(--white-font);
+}

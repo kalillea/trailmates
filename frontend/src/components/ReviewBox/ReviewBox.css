@@ -1,0 +1,107 @@
+.review-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100% !important;
+}
+
+.review-author {
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5%;
+  margin-top: 1%;
+}
+
+.review-author img {
+  height: auto;
+  width: 6vw;
+  border-radius: 100%;
+  margin-bottom: 2%;
+  cursor: pointer;
+}
+
+.review-author img:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+.review-author h3 {
+  cursor: pointer;
+  text-align: center;
+}
+
+.review-author h3:hover {
+  text-decoration: underline;
+}
+
+.review-author h5 {
+  color: var(--accent);
+  font-size: 1vw;
+}
+
+.reviewe-contain-container {
+  border-radius: 30px;
+  background-color: #efefef;
+  width: 60vw;
+  min-height: 18vh;
+  min-width: 60vw;
+  padding: 1% 3%;
+  position: relative;
+}
+
+.dark-mode .reviewe-contain-container {
+  background-color: rgb(91, 90, 90);
+}
+
+.reviewe-contain-container p {
+  font-size: 1.2vw;
+  text-align: left;
+  margin: 0.5% 0;
+}
+
+.reviewer-container {
+  margin-bottom: 5%;
+  align-items: center;
+}
+
+.review-heading {
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.review-rating {
+  justify-content: space-between;
+  position: relative;
+}
+
+.comment-buttons {
+  position: absolute;
+  left: -7.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 7.5vw;
+  min-height: 2.2em;
+}
+
+.comment-buttons > svg {
+  cursor: pointer;
+  height: 1.75em;
+  width: 1.75em;
+}
+
+.comment-buttons > svg:hover {
+  transform: scale(1.1);
+}
+
+.comment-buttons > svg > path {
+  fill: var(--accent);
+}
+
+.comment-buttons > svg:active > path {
+  fill: var(--secondary);
+}

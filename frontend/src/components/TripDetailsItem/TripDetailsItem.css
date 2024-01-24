@@ -1,0 +1,32 @@
+.trip-details-item-container {
+  width: 13vw;
+  margin: 5% 0;
+  justify-content: space-between;
+}
+
+.trip-detail-item-seperator {
+  width: 100%;
+  height: 0.2rem;
+  background-color: var(--secondary);
+  border-radius: 100px;
+}
+
+.trip-details-item-container h3 {
+  font-weight: 500;
+  font-size: 1.4vw;
+  margin-bottom: 5%;
+  margin-left: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .trip-details-item-container h3 {
+    font-size: 1rem;
+  }
+  .trip-details-item-container p {
+    font-size: 0.8rem;
+  }
+  .trip-details-item-container {
+    margin: 15% 0;
+    width: 80%;
+  }
+}

@@ -1,0 +1,37 @@
+.to-top-button {
+  position: fixed;
+  bottom: 3vh;
+  right: 2vw;
+  z-index: 99;
+  background-color: var(--accent);
+  width: 3.5vw;
+  height: 3.5vw;
+  border: 0;
+  border-radius: 15px;
+  opacity: 0.7;
+  transition: all 0.5s;
+}
+
+.to-top-button:hover {
+  opacity: 1;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.to-top-button svg {
+  margin: auto !important;
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .to-top-button {
+    opacity: 0.6;
+    width: 12vw;
+    height: 12vw;
+    bottom: 1.5vh;
+    right: 3vw;
+  }
+  .to-top-button:active {
+    opacity: 1;
+  }
+}
