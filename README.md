@@ -2,7 +2,7 @@
 
 ---
 
-# Backpacker's Hub
+# TrailMates
 
 TrailMates is a web platform designed for backpacking enthusiasts to connect, share their travel experiences, and discover new adventures. This platform facilitates a vibrant community of backpackers who can create user profiles, share detailed travel posts, comment on each other's experiences, and discover recommended travels based on shared interests.
 
