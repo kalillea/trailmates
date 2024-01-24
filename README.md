@@ -20,7 +20,7 @@ TrailMates is a web platform designed for backpacking enthusiasts to connect, sh
 
 - **Recommendation Algorithm:** Explore personalized travel recommendations based on liked travels and user experiences, thanks to our advanced recommendation algorithm.
 
-## Technologies Used
+## Technology Used
 
 - **Frontend:** TypeScript, React
 
