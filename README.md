@@ -65,10 +65,15 @@ This is was made in the NTNU subject "Programvareutvikling" for the spring semes
 ## Contributors
 
 Maria Hafsahl Karlsen mariahka@stud.ntnu.no
+
 Nicolai Heimbeck Arnesen nicolaar@stud.ntnu.no
+
 Knut A. Lilleaas kalillea@stud.ntnu.no
+
 Thor Sjursen thor.sjursen@ntnu.no
+
 Anders Kristensen anderszk@stud.ntnu.no
+
 Ole Andreas Egeland Rørvik oarorvik@stud.ntnu.no
 
 ---
